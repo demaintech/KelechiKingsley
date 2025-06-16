@@ -1,6 +1,6 @@
 "use client";
-import Image from "next/image";
-import {easeInOut, motion} from 'framer-motion';
+// import Image from "next/image";
+import { motion} from 'framer-motion';
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 
 // https://lottie.host/bd255937-c5c5-4822-808a-54e07d86c0f8/7slUmZTlUL.lottie  Skills

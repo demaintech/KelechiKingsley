@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebook, faGithub, faLinkedin, faXTwitter, faYoutube } from "@fortawesome/free-brands-svg-icons";
+import { faFacebook, faGithub, faLinkedin, faXTwitter } from "@fortawesome/free-brands-svg-icons";
 
 const socials = [
   {icon: <FontAwesomeIcon icon={faGithub} />, path: ""},
@@ -20,7 +20,7 @@ const socialsection = socials.map(social =>
 
 const SocialIcons = () => {
   return (
-    <div className="flex gap-2">
+    <div className="flex gap-2" >
       {socialsection}
     </div>
   )
