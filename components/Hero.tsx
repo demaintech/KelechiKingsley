@@ -55,7 +55,7 @@ const Hero = () => {
             
             {/* btn and socials */}
             <div className='flex flex-col xl:flex-row items-center gap-8'>
-              <button className='w-[180px] h-[50px] text-lg  bg-[#00ff99] flex  justify-center items-center '>
+              <button className='w-[180px] h-[50px] text-lg  bg-[#00ff99] flex justify-center items-center'>
                 <span className='text-[#1c1c22] font-semibold uppercase'>Download CV</span>
                 
               </button>

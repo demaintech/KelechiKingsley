@@ -1,7 +1,7 @@
 "use client";
-import { div, section } from "motion/react-client";
+
 import CountUp from "react-countup";
-import { Spotlight } from "./ui/Spotlight";
+// import { Spotlight } from "./ui/Spotlight";
 
 const stats =[
   {
