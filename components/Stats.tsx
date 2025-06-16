@@ -25,8 +25,8 @@ const stats =[
   // },
 ];
 
-const statsection = stats.map(stat =>
-  <div className="flex flex-col lg:flex-row justify-center xl:justify-start text-center xl:text-left mx-auto xl:mx-0 items-center gap-4">
+const statsection = stats.map((stat, index) =>
+  <div key={index} className="flex flex-col lg:flex-row justify-center xl:justify-start text-center xl:text-left mx-auto xl:mx-0 items-center gap-4">
     <div>
       <CountUp 
         end={stat.num} 
@@ -43,7 +43,7 @@ const statsection = stats.map(stat =>
 
 const Stats = () => {
   return (
-    <section className="w-full flex flex-wrap gap-2 mx-auto xl:-mt-4">
+    <section className="w-full flex flex-wrap gap-2 mx-auto mt-16 xl:-mt-4">
       {statsection}
 
       <div>

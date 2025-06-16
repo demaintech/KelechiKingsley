@@ -8,12 +8,12 @@ import { faCode } from '@fortawesome/free-solid-svg-icons';
 
 const Header = () => {
   return (
-    <header className="w-full bg-transparent py-8 xl:py-8 text-white p-4  md:p-6  flex justify-around items-center">
-        <div className='flex gap-2 items-center flex-row justify-center -ml-12'>
+    <header className="w-full bg-transparent py-8 xl:py-8 text-white p-4  md:p-6  flex justify-between xl:justify-around items-center">
+        <div className='flex gap-2 items-center flex-row justify-center xl:-ml-12 pl-6 xl:pl-0'>
           <span className='w-6 h-6 flex justify-center items-center'>
             <FontAwesomeIcon icon={faCode} className=' text-[#00ff99] text-[20px]'/>
           </span>
-          <h1 className='text-xl font-semibold font-mono text-gray-300'>demain<span className='text-[#00ff99] text-gray-900'>Tech</span></h1>
+          <h1 className='text-xl font-semibold font-mono text-gray-300'>demain<span className='text-[#00ff99]'>Tech</span></h1>
         </div>
 
         <div className='hidden xl:flex'>

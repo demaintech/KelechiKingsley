@@ -50,7 +50,7 @@ const Hero = () => {
               </span>
               <span className='text-xl text-gray-300'>Software Developer</span>
             </div>
-            <h1 className='text-[48px] xl:text-[80px] leading-[1.1] mb-6'>Hello, I'm <br /><span className='text-[#00ff99]'>Kelechi Kingsley</span></h1>
+            <h1 className='text-[48px] xl:text-[80px] leading-[1.1] mb-6'>Hello, I&#39;m <br /><span className='text-[#00ff99]'>Kelechi Kingsley</span></h1>
             <p className='max-w-[500px] mb-9 text-gray-300/80 font-normal'>I excel at crafting digital experiences and I am proficient in various programming languages and technologies.</p>
             
             {/* btn and socials */}

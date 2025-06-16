@@ -165,7 +165,7 @@ const CollisionMechanism = React.forwardRef<
       setTimeout(() => {
         setCollision({ detected: false, coordinates: null });
         setCycleCollisionDetected(false);
-      }, 2000);
+      }, 2000 );
 
       setTimeout(() => {
         setBeamKey((prevKey) => prevKey + 1);
