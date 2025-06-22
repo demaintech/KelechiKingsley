@@ -1,52 +1,74 @@
 import { FaCss3, FaFigma, FaHtml5, FaJs, FaReact } from "react-icons/fa";
 import { SiAppwrite, SiExpo, SiNodedotjs, SiPython, SiTailwindcss } from "react-icons/si"
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipTrigger,
+} from "@/components/ui/tooltip"
 
 
 const stacks = [
     {
         icon: <FaReact />,
+        name: "React",
     },
 
     {
         icon: <SiExpo />,
+        name: "Expo",
     },
 
     {
         icon: <FaJs />,
+        name: "JavaScript",
     },
 
     {
         icon: <SiAppwrite />,
+        name: "Appwrite",
     },
 
     {
         icon: <FaCss3 />,
+        name: "CSS 3",
     },
 
     {
         icon: <FaHtml5 />,
+        name: "HTML 5",
     },
 
     {
         icon: <SiNodedotjs />,
+        name: "NodeJs",
     },
 
     {
         icon: <SiTailwindcss />,
+        name: "Tailwind",
     },
 
     {
         icon: <FaFigma />,
+        name: "Figma",
     },
     
 ];
 
 const stacksection = stacks.map(stack =>
-    <div className="w-[100px] h-[100px] bg-gray-800 flex justify-center items-center rounded-lg mx-auto xl:mx-0">
-        <span className="text-[50px] mx-auto text-gray-500">
-            {stack.icon}
-        </span>
-    </div>
+    <Tooltip>
+        <TooltipTrigger>
+            <div
+                className="w-[100px] h-[100px] bg-gray-800 flex justify-center items-center rounded-lg mx-auto xl:mx-0">
+                <span className="text-[50px] mx-auto text-gray-500">
+                    {stack.icon}
+                </span>
+            </div>
+        </TooltipTrigger>
+        <TooltipContent className="bg-gray-800 text-white font-bold text-[16px]">
+            {stack.name}
+        </TooltipContent>
+    </Tooltip>
 );
 
 const TechStack = () => {
