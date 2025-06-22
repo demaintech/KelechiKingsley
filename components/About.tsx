@@ -46,7 +46,7 @@ const About = () => {
             <div className=" flex flex-col w-[100%] text-center xl:items-start xl:text-left">
               <div className="">
                 <h2 className="text-[30px] font-bold text-white">Fullstack software developer & <br /> UI/UX designer.</h2>
-                <p className="text-[16px] font-semibold text-gray-500 w-[80%] mx-auto xl:mx-0">Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur</p>
+                <p className="text-[16px] font-semibold text-gray-500 w-[80%] mx-auto xl:mx-0 mt-4">I’m a passionate and results-driven developer with a strong focus on creating clean, efficient, and scalable solutions. I enjoy building modern web and mobile applications that combine great user experiences with solid technical foundations. With a keen eye for detail and a commitment to continuous learning, I thrive on solving complex challenges and turning ideas into reality.</p>
                 <p><FaReact /></p>
               </div>
             </div>

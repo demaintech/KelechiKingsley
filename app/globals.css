@@ -63,11 +63,16 @@
   --color-foreground: var(--foreground);
   --font-jetbrain-mono: var(--font-jetbrain-mono);
   --font-mono: var(--font-geist-mono);
+  --font-varelaRound: var(--font-varela-round);
+  --font-sacramento: var(--font-sacramento);
+  --font-poiret-one: var(--font-poiretOne);
 }
 
 body {
   /* color: var(--foreground); */
-  font-family: var(--font-jetbrain-mono);
+  font-family: var(--font-varelaRound);
+  /* font-family: var(--font-sacramento); */
+  /* font-family: var(--font-poiretOne); */
 }
 
 :root {
