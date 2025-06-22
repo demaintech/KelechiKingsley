@@ -1,7 +1,12 @@
-import React from 'react';
+// Components
 import NavBar from './NavBar';
+import MobileNav from './MobileNav';
+
+
+// Dependencies
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCode } from '@fortawesome/free-solid-svg-icons';
+
 
 // accent #00ff99 hover #00e187
 
@@ -27,7 +32,9 @@ const Header = () => {
         </div>
 
         {/* Mobile nav */}
-        <div className="xl:hidden">Mobile nav</div>
+        <div className="xl:hidden">
+          <MobileNav />
+        </div>
     </header>
   )
 }

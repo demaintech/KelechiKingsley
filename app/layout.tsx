@@ -13,8 +13,8 @@ const jetbrainsMono = JetBrains_Mono({
 // });
 
 export const metadata: Metadata = {
-  title: "Kingsley's Portfolio",
-  description: "Modern Portfolio with NextJs.",
+  title: "Kelechi Kingsley",
+  description: "Modern Portfolio built with NextJs.",
 };
 
 export default function RootLayout({

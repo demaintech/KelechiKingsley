@@ -19,12 +19,12 @@ const Hero = () => {
     <div className='h-full'>
 
       {/* Grid Section */}
-      <div className="absolute -z-10 flex h-screen w-screen left-0 top-0 items-center justify-center dark:bg-grid-white/[0.3] bg-gray-900 dark:gray-900 text-[#2934454b]">
+      <div className="absolute -z-10 flex h-screen w-screen left-0 top-0 items-center  justify-center dark:bg-grid-white/[0.3] bg-gray-900 dark:gray-900 text-[#2934454b]">
             <div
               className={cn(
                 "absolute inset-0",
                 "[background-size:40px_40px]",
-                "[background-image:linear-gradient(to_right,#e4e4e7_1px,transparent_1px),linear-gradient(to_bottom,#e4e4e7_1px,transparent_1px)]",
+                "[background-image:linear-gradient(to_right,#1e2939_1px,transparent_1px),linear-gradient(to_bottom,#1e2939_1px,transparent_1px)]",
                 "dark:[background-image:linear-gradient(to_right,#2934454b_1px,transparent_1px),linear-gradient(to_bottom,#2934454b_1px,transparent_1px)]",
               )}
             />
@@ -38,7 +38,7 @@ const Hero = () => {
 
       <div className='mx-auto h-full'>
         
-        <Spotlight />
+        
         <Header />
         <div className='flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb- pb-4'>
           
