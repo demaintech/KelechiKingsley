@@ -11,7 +11,7 @@ import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 
 // https://lottie.host/4cbf9f67-1002-4c52-a646-dcf1876ff09d/C3wJmngK81.lottie   modified cycle with bg
 
-const Photo = () => {
+const AboutPhoto = () => {
   return (
     <div className="w-full h-full relative">
         <motion.div 
@@ -29,7 +29,7 @@ const Photo = () => {
                   opacity: 1, 
                   transition: {delay: 2.4, duration: 0.4, ease: "easeIn"},
                 }}
-                className="w-[298px] h-[298px] xl:w-[498px] xl:h-[498px] mix-blend-lighten absolute">
+                className="w-[298px] h-[298px] xl:w-[498px] xl:h-[498px] mix-blend-lighten">
                 <Image 
                   src="/demain.png" 
                   priority quality={100} 
@@ -45,7 +45,7 @@ const Photo = () => {
             </motion.div>
 
             {/* Circle */}
-            <motion.svg className="w-[300px] xl:w-[506px] h-[300px] xl:h-[506px] " 
+            {/* <motion.svg className="w-[300px] xl:w-[506px] h-[300px] xl:h-[506px] " 
               fill="transparent"
               viewBox="0 0 506 506"
               xmlns="http://www.org/2000/svg"
@@ -69,10 +69,10 @@ const Photo = () => {
                   repeatType: "reverse",
                 }}
                 />
-            </motion.svg>
+            </motion.svg> */}
         </motion.div>
     </div>
   )
 }
 
-export default Photo;
+export default AboutPhoto;
