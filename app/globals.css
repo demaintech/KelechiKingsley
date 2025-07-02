@@ -152,3 +152,10 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+
+
+.portfolioBg{
+  background-color: rgba(0, 0, 0, 50%);
+
+}

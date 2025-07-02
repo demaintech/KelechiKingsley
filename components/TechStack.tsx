@@ -1,5 +1,5 @@
 import { FaCss3, FaFigma, FaHtml5, FaJs, FaReact } from "react-icons/fa";
-import { SiAppwrite, SiExpo, SiNodedotjs, SiPython, SiTailwindcss } from "react-icons/si"
+import { SiAppwrite, SiExpo, SiNextdotjs, SiNodedotjs, SiPython, SiTailwindcss } from "react-icons/si"
 import {
   Tooltip,
   TooltipContent,
@@ -9,8 +9,8 @@ import {
 
 const stacks = [
     {
-        icon: <FaReact />,
-        name: "React",
+        icon: <SiNextdotjs />,
+        name: "NextJS",
     },
 
     {
@@ -56,7 +56,7 @@ const stacks = [
 ];
 
 const stacksection = stacks.map(stack =>
-    <Tooltip>
+    <Tooltip >
         <TooltipTrigger>
             <div
                 className="w-[100px] h-[100px] bg-gray-800 flex justify-center items-center rounded-lg mx-auto xl:mx-0">
@@ -75,11 +75,11 @@ const TechStack = () => {
   return (
     <div>
         <div className='w-full p-4 py-24'>
-            <h2 className='text-[30px] font-bold text-white text-center xl:text-left'>Modern Technologies</h2>
+            <h2 className='text-[45px] font-bold text-white text-center xl:text-left'>Modern Technologies</h2>
             <p className='text-gray-500 text-[16px] w-[90%] xl:w-[50%] font-bold text-center xl:text-left mx-auto xl:mx-0'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem neque, odio veniam iste corporis enim. Distinctio.</p>
         </div>
 
-        <div className="w-full flex flex-wrap gap-4">
+        <div className="-[80%] grid grid-cols-3 md:grid-cols-4 md:w-[60%] xl:grid-cols-9 xl:w-[80%] gap-4 mx-auto xl:mx-0">
             {stacksection}
         </div>
     </div>

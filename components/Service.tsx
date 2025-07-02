@@ -1,6 +1,6 @@
 import { faCode } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { FaCode } from "react-icons/fa";
+import { FaBookOpen, FaCode, FaDatabase, FaGlasses, FaMicroscope, FaMobile, FaNetworkWired, FaPen, FaStore, FaUikit } from "react-icons/fa";
 import ServicePhoto from "./ServicePhoto";
 
 const services= [
@@ -13,49 +13,49 @@ const services= [
      {
         title: "Mobile development",
         description: "laudantium neque assumenda porro tenetur optio sunt praesentium ",
-        icon: <FaCode />,
+        icon: <FaMobile />,
     },
 
      {
         title: "UI/UX",
         description: "laudantium neque assumenda porro tenetur optio sunt praesentium ",
-        icon: <FaCode />,
+        icon: <FaUikit />,
     },
 
      {
         title: "Branding",
         description: "laudantium neque assumenda porro tenetur optio sunt praesentium ",
-        icon: <FaCode />,
+        icon: <FaPen />,
     },
 
      {
         title: "Google Business",
         description: "laudantium neque assumenda porro tenetur optio sunt praesentium ",
-        icon: <FaCode />,
+        icon: <FaStore />,
     },
 
      {
         title: "Blockchain",
         description: "laudantium neque assumenda porro tenetur optio sunt praesentium ",
-        icon: <FaCode />,
+        icon: <FaNetworkWired />,
     },
 
      {
         title: "SEO",
         description: "laudantium neque assumenda porro tenetur optio sunt praesentium ",
-        icon: <FaCode />,
+        icon: <FaGlasses />,
     },
 
      {
         title: "Tech Education",
         description: "laudantium neque assumenda porro tenetur optio sunt praesentium ",
-        icon: <FaCode />,
+        icon: <FaBookOpen />,
     },
 ];
 
 
 const servicesection = services.map(service =>
-    <div className="flex justify-between w-[350px] h-[150px] p-4 gap-4 ">
+    <div className="flex flex-col xl:flex-row items-center xl:items-start justify-between w-[350px] h-[150px] p-4 gap-4 mx-auto xl:mx-0 text-center xl:text-left">
         <div>
             <span className="text-[40px] w-[30px] h-[30px] bg-white text-white">
                 {service.icon}
@@ -72,7 +72,7 @@ const Service = () => {
   return (
     <div className="mt-8">
         <div className='w-full p-4'>
-            <h2 className='text-[30px] font-bold text-white text-center xl:text-left'>My Services</h2>
+            <h2 className='text-[45px] font-bold text-white text-center xl:text-left'>My Services</h2>
         </div>
         <div className='w-full py-16 flex items-center justify-between'>
             <div className="grid grid-cols-1 lg:grid-cols-2 w-[100%] x:w-[50%] mx-auto xl:mx-0">
