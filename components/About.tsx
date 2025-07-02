@@ -4,7 +4,10 @@ import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 // import Image from "next/image";
 import AboutPhoto from "./AboutPhoto";
 // import Photo from "./Photo";
-import {FaReact} from "react-icons/fa"
+import { FaTwitter } from "react-icons/fa"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFacebook, faGithub, faLinkedin, faXTwitter } from "@fortawesome/free-brands-svg-icons";
+
 
 
 
@@ -21,7 +24,7 @@ const About = () => {
   return (
    <> 
    <div className="w-full p-4 ">
-    <h2 className="text-[30px] font-bold text-white text-center xl:text-left">About Me</h2>
+    <h2 className="text-[45px] font-bold text-white text-center xl:text-left">About Me</h2>
    </div>
     <main className="w-[100%]  left-0 py-24 flex flex-col xl:flex-row">
         <div className="w-[100%]  ">
@@ -47,7 +50,13 @@ const About = () => {
               <div className="">
                 <h2 className="text-[30px] font-bold text-white">Fullstack software developer & <br /> UI/UX designer.</h2>
                 <p className="text-[16px] font-semibold text-gray-500 w-[80%] mx-auto xl:mx-0 mt-4">I’m a passionate and results-driven developer with a strong focus on creating clean, efficient, and scalable solutions. I enjoy building modern web and mobile applications that combine great user experiences with solid technical foundations. With a keen eye for detail and a commitment to continuous learning, I thrive on solving complex challenges and turning ideas into reality.</p>
-                <p><FaReact /></p>
+                <div className="mt-8 flex gap-4 text-[24px] text-gray-500 W-full justify-center xl:justify-start">
+                  <FontAwesomeIcon icon={faXTwitter} />
+                  <FontAwesomeIcon icon={faFacebook} />
+                  <FontAwesomeIcon icon={faGithub} />
+                  <FontAwesomeIcon icon={faLinkedin} />
+                </div>
+                <button className="w-[180px] h-[50px] text-[20px] mt-9 text-gray-900  bg-[#00ff99] rounded-[50px] font-bold">Hire Me</button>
               </div>
             </div>
         

@@ -28,7 +28,7 @@ const stats =[
 const statsection = stats.map((stat, index) =>
   <div key={index} className="flex flex-col lg:flex-row justify-center xl:justify-start text-center xl:text-left mx-auto xl:mx-0 items-center gap-4">
     <div>
-      <CountUp 
+      <CountUp
         end={stat.num} 
         duration={5} delay={2} 
         className="text-4xl xl:text-5xl font-extrabold mt-4 text-white statnum"

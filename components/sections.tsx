@@ -1,9 +1,11 @@
+import Contact from "./Contact";
 import About from "./About";
 import Portfolio from "./Portfolio";
 import Resume from "./Resume";
 import SectionCount from "./SectionCount";
 import Service from "./Service";
 import TechStack from "./TechStack";
+
 
 const sections = () => {
   return (
@@ -21,6 +23,7 @@ const sections = () => {
           <TechStack />
           <Resume />
           <Portfolio />
+          <Contact />
         </div>
     </main>
   )
