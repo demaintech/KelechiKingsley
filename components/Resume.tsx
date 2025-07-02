@@ -297,10 +297,11 @@ const Resume = () => {
 
                   <ul>
                     {About.info.map((about, index) => {
+                      return (
                       <li key={index}>
                         <span>{about.fieldName}</span>
                       </li>
-                    })}
+                    )})}
                   </ul>
                 </div>
               </div>
