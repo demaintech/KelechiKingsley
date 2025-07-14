@@ -194,19 +194,19 @@ import { SiAppwrite, SiExpo, SiNextdotjs, SiNodedotjs, SiPython, SiTailwindcss }
 
 const Resume = () => {
   return (
-    <div className="py-24 mt-2">
+    <div className="py-24 mt-2 h-[900px]">
         <div className='w-full p-4 '>
-            <h2 className='text-[45px] font-bold text-white text-center xl:text-left'>My Resume</h2>
-            <p className='text-gray-500 text-[16px] xl:w-[50%] w-[90%] font-bold text-center xl:text-left mx-auto xl:mx-0'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem neque, odio veniam iste corporis enim. Distinctio.</p>
+            <h2 className='text-[45px] font-bold text-white text-center '>My Resume</h2>
+            <p className='text-gray-500 text-[16px] xl:w-[50%] w-[90%] font-bold text-center mx-auto '>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem neque, odio veniam iste corporis enim. Distinctio.</p>
         </div>
 
         <div className="w-full mt-16">
           <Tabs
             defaultValue="experience"
-            className="flex flex-col xl:flex-row items-center justify-between"
+            className="flex flex-col xl:flex-row  justify-between"
           >
             <TabsList className="flex flex-col max-w-[380px] gap-8 text-[20px] font-bold">
-              <TabsTrigger value="experience">Experience</TabsTrigger>
+              <TabsTrigger value="experience" className="h-[80px]">Experience</TabsTrigger>
               <TabsTrigger value="education">Education</TabsTrigger>
               <TabsTrigger value="skills">Skils</TabsTrigger>
               <TabsTrigger value="about">About me</TabsTrigger>
@@ -217,7 +217,7 @@ const Resume = () => {
 
           {/* Experience */}
             <TabsContent value="experience">
-              <div className="flex flex-col text-center xl:text-left pt-8 xl:pt-0">
+              <div className="flex flex-col text-center xl:text-left pt-8 xl:pt-0 h-[600px]">
                 <h2 className="text-[40px] font-bold">{experience.title}</h2>
                 <p className="text-gray-500 text-[17px] font-bold w-[90%] mx-auto xl:mx-0 xl:w-[50%]">{experience.description}</p>
 
@@ -240,7 +240,7 @@ const Resume = () => {
 
           {/* Education */}
             <TabsContent value="education">
-              <div className="flex flex-col text-center xl:text-left pt-8 xl:pt-0">
+              <div className="flex flex-col text-center xl:text-left pt-8 xl:pt-0 h-[600px]">
                 <h2 className="text-[40px] font-bold">{education.title}</h2>
                 <p className="text-gray-500 text-[17px] font-boldw-[90%] mx-auto xl:mx-0 xl:w-[50%]">{education.description}</p>
 
@@ -263,7 +263,7 @@ const Resume = () => {
 
           {/* Skills */}
             <TabsContent value="skills" className="w-full h-full">
-              <div className="flex flex-col gap-[30px] text-center xl:text-left pt-8 xl:pt-0">
+              <div className="flex flex-col gap-[30px] text-center xl:text-left pt-8 xl:pt-0 h-[600px]">
                 <div>
                   <h2 className="text-[40px] font-bold">{skill.title}</h2>
                   <p className="text-gray-500 text-[17px] font-bold w-[90%] mx-auto xl:mx-0 xl:w-[50%]">{skill.description}</p>
@@ -289,9 +289,9 @@ const Resume = () => {
             </TabsContent>
 
           {/* About me */}
-            <TabsContent value="about">
+            <TabsContent value="about" >
               <div>
-                <div className="flex flex-col text-center xl:text-left pt-8 xl:pt-0">
+                <div className="flex flex-col text-center xl:text-left pt-8 xl:pt-0  h-[600px]">
                   <h2 className="text-[40px] font-bold">{About.title}</h2>
                   <p className="text-gray-500 text-[17px] font-bold w-[90%] mx-auto xl:mx-0 xl:w-[50%]">{About.description}</p>
 

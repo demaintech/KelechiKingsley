@@ -159,3 +159,20 @@ body {
   background-color: rgba(0, 0, 0, 50%);
 
 }
+
+
+
+.portfolioContent{
+  background: url('/busweb1.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.projectSection{
+  background: url('/project3.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

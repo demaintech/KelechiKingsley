@@ -8,15 +8,16 @@ import { Select, SelectValue, SelectTrigger, SelectContent, SelectGroup,SelectIt
 
 const Contact = () => {
   return (
-    <div className="text-white">
+
+    <div className="text-white mt-[100px]">
         <div className='w-full p-4'>
-            <h2 className='text-[45px] font-bold text-white text-center xl:text-left'>Contact me</h2>
-            <p className='text-gray-500 text-[16px] xl:w-[90%] font-bold text-center xl:text-left mx-auto xl:mx-0'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem neque, odio veniam iste corporis enim. Distinctio. </p>
+            <h2 className='text-[45px] font-bold text-white text-center '>Contact me</h2>
+            <p className='text-gray-500 text-[16px] xl:w-[90%] font-bold text-center mx-auto '>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem neque, odio veniam iste corporis enim. Distinctio. </p>
         </div>
 
-        <div className="w-full flex flex-col xl:flex-row justify-between items-center py-16">
-            <div className="xl:w-[50%] w-[100%]">
-                <h2 className="text-gray-500 font-bold text-[40px] text-center xl:text-left">Any type of Query & <br /> Discussion</h2>
+        <div className="w-[80%]  mx-auto flex flex-col xl:flex-row justify-between items-center py-16">
+            <div className="xl:w-[50%]  w-[100%]">
+                <h2 className="text-white font-bold text-[40px] text-center xl:text-left">Any type of Query & <br /> Discussion</h2>
                 <div className="flex gap-4 items-center justify-center xl:justify-start xl:items-start text-center xl:text-left text-gray-500 text-[28px] pt-8">
                     <FontAwesomeIcon icon={faXTwitter} />
                     <FontAwesomeIcon icon={faFacebook} />
@@ -50,10 +51,10 @@ const Contact = () => {
                     </div>
                 </div>
             </div>
-            <div className="xl:w-[50%] w-full pt-12 xl:pt-0">
+            <div className="xl:w-[70%] w-full pt-12 xl:pt-0  flex justify-end items-center">
                 <form 
                     action="" 
-                    className="w-[80%] md:w-[60%] mx-auto xl:mx-0  pt-4 h-[600px] border-2 gap-4 border-gray-800 rounded-[50px] flex flex-col items-center"
+                    className="w-[100%] md:w-[60%] mx-auto xl:mx-0  pt-4 h-[600px] border-2 gap-4 border-gray-800 rounded-[50px] flex flex-col items-center"
                 >
                     <h2 
                         className="text-[25px] text-center text-white"
@@ -94,14 +95,36 @@ const Contact = () => {
                         >
                             <SelectGroup>
                                 <SelectLabel>Select a service</SelectLabel>
-                                <SelectItem value="web">Web development</SelectItem>
-                                <SelectItem value="mobile">Mobile development</SelectItem>
-                                <SelectItem value="uiux">UI/UX</SelectItem>
-                                <SelectItem value="googlebus">Google Business</SelectItem>
-                                <SelectItem value="seo">SEO</SelectItem>
-                                <SelectItem value="branding">Branding</SelectItem>
-                                <SelectItem value="blockchain">Blockchain</SelectItem>
-                                <SelectItem value="techedu">Tech Education</SelectItem>
+                                <SelectItem 
+                                    value="web"
+                                >
+                                Web development</SelectItem>
+                                <SelectItem 
+                                    value="mobile"
+                                >
+                                Mobile development</SelectItem>
+                                <SelectItem 
+                                    value="uiux"
+                                >
+                                UI/UX</SelectItem>
+                                <SelectItem 
+                                    value="googlebus"
+                                >
+                                Google Business</SelectItem>
+                                <SelectItem 
+                                    value="seo">SEO</SelectItem>
+                                <SelectItem 
+                                    value="branding"
+                                >
+                                Branding</SelectItem>
+                                <SelectItem 
+                                    value="blockchain"
+                                >
+                                Blockchain</SelectItem>
+                                <SelectItem 
+                                    value="techedu"
+                                >
+                                Tech Education</SelectItem>
                             </SelectGroup>
                         </SelectContent>
                     </Select>
