@@ -10,7 +10,7 @@ const stats =[
   },
 
   {
-    num: 26,
+    num: 260,
     text: "Projects Completed",
   },
 
@@ -31,7 +31,7 @@ const statsection = stats.map((stat, index) =>
       <CountUp
         end={stat.num} 
         duration={5} delay={2} 
-        className="text-4xl xl:text-5xl font-extrabold mt-4 text-white statnum"
+        className="text-[50px] xl:text-5xl font-extrabold mt-4 text-white statnum"
       />
     </div>
     <div>

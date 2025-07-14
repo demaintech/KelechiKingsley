@@ -72,15 +72,15 @@ const Service = () => {
   return (
     <div className="mt-8">
         <div className='w-full p-4'>
-            <h2 className='text-[45px] font-bold text-white text-center xl:text-left'>My Services</h2>
+            <h2 className='text-[45px] font-bold text-white text-center'>My Services</h2>
         </div>
-        <div className='w-full py-16 flex items-center justify-between'>
-            <div className="grid grid-cols-1 lg:grid-cols-2 w-[100%] x:w-[50%] mx-auto xl:mx-0">
+        <div className='w-full py-16'>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 w-[100%] xl:w-[80%] mx-auto">
                 {servicesection}
             </div>
-            <div className="hidden xl:block">
+            {/* <div className="hidden xl:block">
                 <ServicePhoto />
-            </div>
+            </div> */}
         </div>
     </div>
   )

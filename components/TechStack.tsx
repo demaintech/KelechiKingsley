@@ -75,11 +75,11 @@ const TechStack = () => {
   return (
     <div>
         <div className='w-full p-4 py-24'>
-            <h2 className='text-[45px] font-bold text-white text-center xl:text-left'>Modern Technologies</h2>
-            <p className='text-gray-500 text-[16px] w-[90%] xl:w-[50%] font-bold text-center xl:text-left mx-auto xl:mx-0'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem neque, odio veniam iste corporis enim. Distinctio.</p>
+            <h2 className='text-[45px] font-bold text-white text-center '>Modern Technologies</h2>
+            <p className='text-gray-500 text-[16px] w-[90%] xl:w-[50%] font-bold text-center mx-auto '>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem neque, odio veniam iste corporis enim. Distinctio.</p>
         </div>
 
-        <div className="-[80%] grid grid-cols-3 md:grid-cols-4 md:w-[60%] xl:grid-cols-9 xl:w-[80%] gap-4 mx-auto xl:mx-0">
+        <div className="w-[100%] justify-center md:w-[80%] lg:[50%] flex flex-wrap gap-4 mx-auto">
             {stacksection}
         </div>
     </div>

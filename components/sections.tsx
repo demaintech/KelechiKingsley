@@ -5,11 +5,12 @@ import Resume from "./Resume";
 import SectionCount from "./SectionCount";
 import Service from "./Service";
 import TechStack from "./TechStack";
+import Hire from "./Hire";
 
 
 const sections = () => {
   return (
-    <main className='w-full flex mt-24 bg-gray-900'>
+    <main className='w-full flex xl:mt-[300px] bg-gray-900'>
 
     {/* Numbers */}
         <div className="hidden lg:block">
@@ -21,9 +22,10 @@ const sections = () => {
           <About />
           <Service />
           <TechStack />
-          <Resume />
+          {/* <Resume /> */}
           <Portfolio />
           <Contact />
+          <Hire />
         </div>
     </main>
   )

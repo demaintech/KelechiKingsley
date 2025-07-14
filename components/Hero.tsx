@@ -18,6 +18,14 @@ const Hero = () => {
   return (
     <div className='h-full'>
 
+      {/* Navbar  on scroll up */}
+
+      <div className='fixed w-[100%] top-0 left-0 z-50'>
+        <div className=' w-[90%] xl:w-[60%] mt-8 mx-auto backdrop-blur-lg border-gray-800 border-[2px] h-[80px] shadow-md rounded-[50px] p-0 flex justify-center items-center'>
+          <Header />
+        </div>
+      </div>
+
       {/* Grid Section */}
       <div className="absolute -z-10 flex h-screen w-screen left-0 top-0 items-center  justify-center dark:bg-grid-white/[0.3] bg-gray-900 dark:gray-900 text-[#2934454b]">
             <div
@@ -39,7 +47,7 @@ const Hero = () => {
       <div className='mx-auto h-full'>
         
         
-        <Header />
+        {/* <Header /> */}
         <div className='flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb- pb-4'>
           
           {/* Text */}
@@ -61,7 +69,6 @@ const Hero = () => {
               </button>
               <div className='mb-2 xl:mb-0'>
                 <SocialIcons
-                
                 />
               </div>
             </div>

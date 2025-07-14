@@ -73,6 +73,106 @@ const portfolios = [
         alt: "",
     }, 
 
+    {
+        name: "Harvy IT",
+        type: "Website",
+        image: "/busweb5.jpeg",
+        description: "explicabo repellendus ex provident perferendis ",
+        accent: "",
+        // url: "/portfolio3.jpeg",
+        alt: "",
+    }, 
+
+
+    {
+        name: "Harvy IT",
+        type: "Website",
+        image: "/busweb5.jpeg",
+        description: "explicabo repellendus ex provident perferendis ",
+        accent: "",
+        // url: "/portfolio3.jpeg",
+        alt: "",
+    }, 
+
+
+    {
+        name: "Harvy IT",
+        type: "Website",
+        image: "/busweb5.jpeg",
+        description: "explicabo repellendus ex provident perferendis ",
+        accent: "",
+        // url: "/portfolio3.jpeg",
+        alt: "",
+    }, 
+
+
+    {
+        name: "Harvy IT",
+        type: "Website",
+        image: "/busweb5.jpeg",
+        description: "explicabo repellendus ex provident perferendis ",
+        accent: "",
+        // url: "/portfolio3.jpeg",
+        alt: "",
+    }, 
+
+
+
+    {
+        name: "Harvy IT",
+        type: "Website",
+        image: "/busweb5.jpeg",
+        description: "explicabo repellendus ex provident perferendis ",
+        accent: "",
+        // url: "/portfolio3.jpeg",
+        alt: "",
+    }, 
+
+
+    {
+        name: "Harvy IT",
+        type: "Website",
+        image: "/busweb5.jpeg",
+        description: "explicabo repellendus ex provident perferendis ",
+        accent: "",
+        // url: "/portfolio3.jpeg",
+        alt: "",
+    }, 
+
+
+
+    {
+        name: "Harvy IT",
+        type: "Website",
+        image: "/busweb5.jpeg",
+        description: "explicabo repellendus ex provident perferendis ",
+        accent: "",
+        // url: "/portfolio3.jpeg",
+        alt: "",
+    }, 
+
+
+    {
+        name: "Harvy IT",
+        type: "Website",
+        image: "/busweb5.jpeg",
+        description: "explicabo repellendus ex provident perferendis ",
+        accent: "",
+        // url: "/portfolio3.jpeg",
+        alt: "",
+    }, 
+
+
+    {
+        name: "Harvy IT",
+        type: "Website",
+        image: "/busweb5.jpeg",
+        description: "explicabo repellendus ex provident perferendis ",
+        accent: "",
+        // url: "/portfolio3.jpeg",
+        alt: "",
+    }, 
+
 ];
 //  const [openModal, setOpenModal] = useState(false);
 //  const [openModal, setOpenModal] = useState(false);
@@ -130,7 +230,7 @@ const Portfolios = () => {
       </div>
 
       <div className="w-full">
-        <h2 className="text-gray-500 text-center text-[20px] font-bold mt-6">view all...</h2>
+        {/* <h2 className="text-gray-500 text-center text-[20px] font-bold mt-6">view all...</h2> */}
       </div>
  
     {/* Portfolio contents modal ${openModal ? "flex" : "hidden"}*/}
