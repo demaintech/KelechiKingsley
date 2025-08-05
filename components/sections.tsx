@@ -6,6 +6,7 @@ import SectionCount from "./SectionCount";
 import Service from "./Service";
 import TechStack from "./TechStack";
 import Hire from "./Hire";
+import Stats from "./Stats";
 
 
 const sections = () => {
@@ -13,12 +14,13 @@ const sections = () => {
     <main className='w-full flex xl:mt-[300px] bg-gray-900'>
 
     {/* Numbers */}
-        <div className="hidden lg:block">
+        {/* <div className="hidden lg:block">
             <SectionCount />
-        </div>
+        </div> */}
 
     {/* Sections */}
         <div className="w-[100%]">
+          <Stats />
           <About />
           <Service />
           <TechStack />

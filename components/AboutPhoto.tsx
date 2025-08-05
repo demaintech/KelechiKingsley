@@ -29,18 +29,18 @@ const AboutPhoto = () => {
                   opacity: 1, 
                   transition: {delay: 2.4, duration: 0.4, ease: "easeIn"},
                 }}
-                className="w-[298px] h-[298px] xl:w-[498px] xl:h-[498px] mix-blend-lighten">
-                <Image 
+                className="w-[298px] h-[298px] xl:w-[498px] xl:h-[498px] mix-blend-lighten border-2">
+                {/* <Image 
                   src="/demain.png" 
                   priority quality={100} 
                   fill 
                   alt="" 
-                  className="object-contain" />
-                {/* <DotLottieReact
+                  className="object-contain" /> */}
+                <DotLottieReact
                   src="https://lottie.host/4cbf9f67-1002-4c52-a646-dcf1876ff09d/C3wJmngK81.lottie"
                   loop
                   autoplay
-                /> */}
+                />
                   
             </motion.div>
 

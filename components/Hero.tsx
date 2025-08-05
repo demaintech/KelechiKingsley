@@ -4,6 +4,7 @@ import SocialIcons from './SocialIcons';
 import Stats from './Stats';
 import Header from './Header';
 
+
 // Ui Components
 import { Spotlight } from './ui/Spotlight';
 import { cn } from "@/lib/utils";
@@ -11,20 +12,78 @@ import { cn } from "@/lib/utils";
 // Dependecies
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCode } from '@fortawesome/free-solid-svg-icons';
+import gsap from 'gsap'; 
+import { useGSAP } from '@gsap/react';
+import { ScrollTrigger, SplitText } from 'gsap/all';
+
+// gsap.registerPlugin(ScrollTrigger, SplitText);
 
 
- 
+
 const Hero = () => {
+
+
+//     useGSAP(() => {
+//       const tl = gsap.timeline({ defaults: { duration: 0.9, ease: "power2.inOut" } });
+
+//       tl.fromTo('.myname', { opacity: 0, x: -120 }, { opacity: 1, x: 0 })
+//         .fromTo('.description', { opacity: 0, x: -120 }, { opacity: 1, x: 0 }, "-=0.5")
+//         .fromTo('.downloadcv', { opacity: 0, scale: 0.8 }, { opacity: 1, scale: 1 }, "-=0.5")
+//         .fromTo('.socialicons', { opacity: 0, x: 80 }, { opacity: 1, x: 0 }, "-=0.5")
+//         .fromTo('.jobtitle', { opacity: 0, y: -80 }, { opacity: 1, y: 0 });
+
+//         tl.fromTo('.mynamemobile', { opacity: 0, y: 120 }, { opacity: 1, y: 0 }, )
+//           .fromTo('.descriptionmobile', { opacity: 0, y: 120 }, { opacity: 1, y: 0 })
+//           .fromTo('.downloadcvmobile', { opacity: 0, scale: 0.8 }, { opacity: 1, scale: 1 }, "-=0.5")
+//           .fromTo('.socialiconsmobile', { opacity: 0, x: 80 }, { opacity: 1, x: 0 }, "-=0.5")
+//           .fromTo('.jobtitlemobile', { opacity: 0, y: -50 }, { opacity: 1, y: 0 });
+// }, []);
+
+// useGSAP(() => {
+//   gsap.timeline({
+//     scrollTrigger:{
+//       trigger: '#hero',
+//       start: 'top top',
+//       end: 'bottom top',
+//       scrub: true,
+//     }
+//   })
+
+//   .to('#circle', {y: 400}, 0)
+// })
+
+
+  // gsap.from(paragraghSplit.lines, {
+  //   opacity: 0,
+  //   yPercent: 100,
+  //   duration: 1.8,
+  //   ease: 'expo.out',
+  //   stagger: 0.05,
+  // })
+
+
+
+useGSAP(() => {
+  const heroSplit = new SplitText('.myname ', {type: 'chars, words'});
+  const paragraghSplit = new SplitText('.description', {type: 'lines'});
+
+  heroSplit.chars.forEach((char) => char.classList.add('opacity-75'));
+
+  const tl = gsap.timeline({ defaults: { duration: 0.9, ease: "power2.inOut" } });
+
+  tl.fromTo('.myname', { opacity: 0, y: 120 }, { opacity: 1, y: 0 })
+      .fromTo('.description', { opacity: 0, y: 120 }, { opacity: 1, y: 0 })
+      .fromTo('.downloadcv', { opacity: 0, scale: 0.8 }, { opacity: 1, scale: 1 }, "-=0.5")
+      .fromTo('.socialicons', { opacity: 0, x: 80 }, { opacity: 1, x: 0 }, "-=0.5")
+      .fromTo('.jobtitle', { opacity: 0, y: -80 }, { opacity: 1, y: 0 })
+      .fromTo('.stats', { opacity: 0, y: -100 }, { opacity: 1, y: 0 }, "-=0.5");
+
+}, []);
+
   return (
     <div className='h-full'>
 
       {/* Navbar  on scroll up */}
-
-      <div className='fixed w-[100%] top-0 left-0 z-50'>
-        <div className=' w-[90%] xl:w-[60%] mt-8 mx-auto backdrop-blur-lg border-gray-800 border-[2px] h-[80px] shadow-md rounded-[50px] p-0 flex justify-center items-center'>
-          <Header />
-        </div>
-      </div>
 
       {/* Grid Section */}
       <div className="absolute -z-10 flex h-screen w-screen left-0 top-0 items-center  justify-center dark:bg-grid-white/[0.3] bg-gray-900 dark:gray-900 text-[#2934454b]">
@@ -44,30 +103,30 @@ const Hero = () => {
       </div>
 
 
-      <div className='mx-auto h-full'>
+      <div className='w-full h-screen flex flex-col xl:items-center mx-auto  xl:justify-center'>
         
         
         {/* <Header /> */}
-        <div className='flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb- pb-4'>
+        <div className='w-full flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb- pb-4 pt-40 '>
           
           {/* Text */}
-          <div className='text-center xl:text-left text-white order-2 xl:order-none'>
-            <div className='flex items-center gap-2 justify-center xl:justify-start text-center'>
+          <div className='text-center xl:text-left text-white order-2 xl:order-none '>
+            <div className='flex items-center gap-2 mb-3 justify-center xl:justify-start text-center jobtitle'>
               <span className='w-6 h-6'>
-                <FontAwesomeIcon icon={faCode} className=' text-[#00ff99] text-[20px]'/>
+                <FontAwesomeIcon icon={faCode} className=' text-[#8973EC] text-[20px]'/>
               </span>
-              <span className='text-xl text-gray-300'>Software Developer</span>
+              <span className='text-xl text-gray-300 '>Software Developer</span>
             </div>
-            <h1 className='text-[48px] xl:text-[80px] leading-[1.1] mb-6'>Hello, I&#39;m <br /><span className='text-[#00ff99]'>Kelechi Kingsley</span></h1>
-            <p className='max-w-[500px] mb-9 text-gray-300/80 font-normal'>I excel at crafting digital experiences and I am proficient in various programming languages and technologies.</p>
+            <h1 className="myname text-[43px] xl:text-[80px] leading-[1.1] mb-4 md:mb-6">Hello, I&#39;m <br /><span className='text-[#8973EC]'>Kelechi Kingsley</span></h1>
+            <p className='description max-w-[500px] mb-9 text-gray-300/80 font-normal'>I excel at crafting digital experiences and I am proficient in various programming languages and technologies.</p>
             
             {/* btn and socials */}
-            <div className='flex flex-col xl:flex-row items-center gap-8'>
-              <button className='w-[180px] h-[50px] text-lg  bg-[#00ff99] flex justify-center items-center'>
-                <span className='text-[#1c1c22] font-semibold uppercase'>Download CV</span>
+            <div className='flex xl:flex-row items-center gap-6 md:gap-8'>
+              <button className='w-[180px] h-[50px] text-lg  bg-[#8973EC] downloadcv  hover:opacity-75 flex justify-center items-center'>
+                <span className='text-[#1c1c22] font-semibold uppercase '>Download CV</span>
                 
               </button>
-              <div className='mb-2 xl:mb-0'>
+              <div className='mb-2 xl:mb-0 socialicons'>
                 <SocialIcons
                 />
               </div>
@@ -75,11 +134,13 @@ const Hero = () => {
           </div>
 
           {/* Photo */}
-          <div className='order-1 xl:order-none mb-8 xl:mb-0'>
+          <div className='order-1 xl:order-none mb-8 xl:mb-0' id='circle'>
             <Photo />
           </div>
         </div>
-        <Stats  />
+        <div className='w-full stats text-left'>
+          {/* <Stats  /> */}
+        </div>
       </div>
       
     </div>

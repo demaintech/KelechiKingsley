@@ -3,6 +3,11 @@
 import { faArrowRight, faClose, faCode, faHeart, faLink, faPen, faSeedling } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
+
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/all";
+import { useGSAP } from "@gsap/react";
+
 // import Image from "next/image";
 
 //  const [openModal, setOpenModal] = useState(false);
@@ -102,11 +107,11 @@ const portfoliosection = portfolios.map((portfolio, index) =>
 
           <button 
             // onClick={() => setOpenModal(true)}
-            className="w-[50px] h-[50px] border-2 border-white rounded-full flex items-center justify-center text-white">
+            className="w-[50px] h-[50px] border-2 border-[#8973EC] rounded-full flex items-center justify-center text-[#8973EC]">
             <FontAwesomeIcon icon={faArrowRight} />
           </button>
         <div>
-          <span className={`text-[30px]  mt-6  ${portfolio.like === true ? "text-[#00ff99]" : "text-white"}`}>
+          <span className={`text-[30px]  mt-6  ${portfolio.like === true ? "text-[#8973EC]" : "text-white"}`}>
             <FontAwesomeIcon icon={faHeart} />
           </span>
         </div>
@@ -121,16 +126,14 @@ const portfoliosection = portfolios.map((portfolio, index) =>
 
 
 const Portfolios = () => {
-  // const [openModal, setOpenModal] = useState(false);
-  
   return (
-    <main className="w-full">
+    <main className="w-full" id="portfolios">
       <div className="xl:w-[80%] gap-8 justify-center  w-[90%] mx-auto py-12 flex flex-wrap">
         {portfoliosection}
       </div>
 
       <div className="w-full">
-        <h2 className="text-gray-500 text-center text-[20px] font-bold mt-6">view all...</h2>
+        <h2 className="text-[#8973EC] text-center text-[20px] font-bold mt-6">view all...</h2>
       </div>
  
     {/* Portfolio contents modal ${openModal ? "flex" : "hidden"}*/}
@@ -161,29 +164,29 @@ const Portfolios = () => {
               </div>
               <div className="mt-4">
                 <div className="flex flex-row gap-4">
-                  <span className="text-gray-500 text-[18px] font-bold">
+                  <span className="text-[#8973EC] text-[18px] font-bold">
                     <FontAwesomeIcon icon={faPen} /> 
                   </span>
                   <h4 className="text-gray-500 uppercase font-semibold">fintech</h4>
                 </div>
 
                 <div className="flex flex-row gap-4 mt-4">
-                  <span className="text-gray-500 text-[18px] font-bold">
+                  <span className="text-[#8973EC] text-[18px] font-bold">
                     <FontAwesomeIcon icon={faCode} /> 
                   </span>
                   <h4 className="text-gray-500 uppercase font-semibold">web</h4>
                 </div>
 
                 <div className="flex flex-row gap-4 mt-4">
-                  <span className="text-gray-500 text-[18px] font-bold">
+                  <span className="text-[#8973EC] text-[18px] font-bold">
                     <FontAwesomeIcon icon={faLink} /> 
                   </span>
                   <h4 className="text-gray-500 text-[17px] font-semibold">www.zyntel.com</h4>
                 </div>
 
                 <div className="flex flex-row gap-4 mt-6">
-                  <h4 className="text-gray-500 uppercase font-semibold underline">visit site</h4>
-                  <span className="text-gray-500 text-[18px] font-bold">
+                  <h4 className="text-[#8973EC] uppercase font-semibold underline">visit site</h4>
+                  <span className="text-[#8973EC] text-[18px] font-bold">
                     <FontAwesomeIcon icon={faArrowRight} /> 
                   </span>
                 </div>
@@ -193,7 +196,7 @@ const Portfolios = () => {
 
 
             {/* Footer */}
-            <div className="p-6 text-gray-500 flex items-center gap-2">
+            <div className="p-6 text-[#8973EC] flex items-center gap-2">
               <span className="font-bold text-[18px]">
                 <FontAwesomeIcon icon={faSeedling} />
               </span>
