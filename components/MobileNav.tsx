@@ -48,7 +48,7 @@ const MobileNav = () => {
             <button 
                 onClick={() => setOpenNav(true)}
             >
-                <CiMenuFries className='text-[#00ff99] text-[30px] cursor-pointer font-bold' />
+                <CiMenuFries className='text-[#8973EC] text-[30px] cursor-pointer font-bold' />
             </button>
         </div>
 

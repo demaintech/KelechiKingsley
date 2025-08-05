@@ -2,6 +2,10 @@ import Image from "next/image";
 import Portfolios from "./Portfolios";
 // import { Tabs, TabsList, TabsTrigger, TabsContent } from "./ui/tabs";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@radix-ui/react-tabs";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/all";
+import { useGSAP } from "@gsap/react";
+
 
 // const portfolio = [
 //     {
@@ -14,11 +18,24 @@ import { Tabs, TabsList, TabsTrigger, TabsContent } from "@radix-ui/react-tabs";
 // ];
 
 const Portfolio = () => {
+
+      useGSAP(() => {
+        gsap.timeline({
+            scrollTrigger: {
+                trigger: '#portfolio',
+                start: 'top bottom',
+                end: 'bottom top',
+                scrub: true,
+
+        }})
+            .fromTo('#portfoliotext', { opacity: 0, y: -200 }, { opacity: 1, y: 0 })
+}, [])
+  
   return (
-    <div className="mt-[200px]">
+    <div className="mt-[200px]" id="portfolio">
         <div className="">
-            <div className='w-full p-4'>
-                <h2 className='text-[45px] font-bold text-white text-center '>My Portfolio</h2>
+            <div className='w-full p-4' >
+                <h2 className='text-[45px] font-bold text-white text-center ' id="portfoliotext">My Portfolio</h2>
                 <p className='text-gray-500 text-[16px] xl:w-[90%] font-bold text-center mx-auto '>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem neque, odio veniam iste corporis enim. Distinctio. <br /></p>
             </div>
         </div>
